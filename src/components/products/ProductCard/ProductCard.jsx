@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
+  
 
   return (
     <div
@@ -14,6 +15,7 @@ const ProductCard = ({ item }) => {
         borderRadius: "8px",
       }}>
       <h4 id="div-card-h4">{item.name}</h4>
+    
       <img
         id="div-card-img"
         src={item.picture}

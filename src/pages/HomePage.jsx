@@ -3,8 +3,8 @@ import Pagination from "@mui/material/Pagination";
 // import SwiperSlide from "../components/SwiperSlide/SwiperSlide";
 import { useProducts } from "../contexts/ProductContextProvider";
 import Carousel from "../components/SwiperSlide/SwiperSlide";
-import Carousel2 from "../components/SwiperSlide2/SwiperSlide2";
 import ProductCard from "../components/products/ProductCard/ProductCard";
+import OutstandingPeople from "../components/OutstandingPeople";
 
 // import "../../../styles/ProductsList.css";
 
@@ -76,8 +76,7 @@ const HomePage = () => {
         }}>
         Outstanding people of Kyrgyzstan in history
       </h2>
-
-      <Carousel2 />
+      <OutstandingPeople />
     </div>
   );
 };
