@@ -62,14 +62,7 @@ const EditProduct = () => {
                 value={product.description}
               />
               <br />
-              <input
-                className="add-inp"
-                type="number"
-                placeholder="Price"
-                name="price"
-                onChange={handleInp}
-                value={product.price}
-              />
+              
               <br />
               <input
                 className="add-inp"
@@ -80,15 +73,8 @@ const EditProduct = () => {
                 value={product.picture}
               />
               <br />
-              <input
-                className="add-inp"
-                type="text"
-                placeholder="Type"
-                name="type"
-                onChange={handleInp}
-                value={product.type}
-              />
-              <br />
+              
+              
 
               <Button
                 variant="contained"

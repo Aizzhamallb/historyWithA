@@ -246,3 +246,11 @@ footer {
 .slider {
   height: 600px;
 }
+#outstanding-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* .outstandingcCards:hover {
+  scale: 1.05;
+} */

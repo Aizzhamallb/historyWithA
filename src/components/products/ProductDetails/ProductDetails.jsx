@@ -21,6 +21,7 @@ const ProductDetails = ({ item }) => {
     deleteProduct(id);
     navigate("/");
   };
+
   return (
     <>
       {productDetails ? (
@@ -46,6 +47,21 @@ const ProductDetails = ({ item }) => {
       )}
 
       <div style={{ textAlign: "center" }}>
+        {productDetails && (
+          <IconButton>
+            <GradeIcon
+              size="small"
+              onClick={() => {
+                addProductToFavorites(productDetails);
+                console.log(checkProductInFavorites(productDetails.id));
+              }}
+              color={
+                checkProductInFavorites(productDetails.id) ? "warning" : ""
+              }>
+              {/* <ShoppingCartIcon /> */}
+            </GradeIcon>
+          </IconButton>
+        )}
         <Button
           style={{
             marginBottom: "10px",
