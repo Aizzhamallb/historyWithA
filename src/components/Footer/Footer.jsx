@@ -15,33 +15,47 @@ export default function Footer() {
         px={{ xs: 3, sm: 10 }}
         py={{ xs: 5, sm: 10 }}
         // bgcolor="text.secondary"
-        style={{ background: "black" }}
-        color="white">
+        style={{ background: "white" }}
+        color="black"
+      >
         <Container maxWidth="lg">
+          <Box>
+            <Link target="_blank" href="http://alatoo.edu.kg/#gsc.tab=0">
+              <img
+                style={{ color: "white", textDecoration: "none" }}
+                width={"150px"}
+                src="http://alatoo.edu.kg/image;jsessionid=Puud2E_Bjetz%E2%80%A6host?img=image_logo_4x.png_565734559276200316.png"
+                alt=""
+              />
+            </Link>
+          </Box>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Help</Box>
+              <Link
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                href="https://www.president.kg/ru/kyrgyzstan/istoriya"
+              >
+                <Box style={{ color: "black" }} borderBottom={1}>
+                  History of Kyrgyzstan
+                </Box>
+              </Link>
               <Box>
                 <Link
+                  href="http://alatoo.edu.kg/view/public/pages/contacts.xhtml#gsc.tab=0"
                   style={{ textDecoration: "none" }}
-                  href="https://www.apple.com/contact/"
-                  color="inherit">
+                  color="inherit"
+                >
                   Contact
                 </Link>
               </Box>
               <Box>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  href="https://mail.google.com/"
-                  color="inherit">
+                <Link style={{ textDecoration: "none" }} color="inherit">
                   Support
                 </Link>
               </Box>
               <Box>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  href="https://www.apple.com/privacy/"
-                  color="inherit">
+                <Link style={{ textDecoration: "none" }} color="inherit">
                   Privacy
                 </Link>
               </Box>
@@ -52,7 +66,8 @@ export default function Footer() {
                 <Link
                   style={{ textDecoration: "none" }}
                   href="/login"
-                  color="inherit">
+                  color="inherit"
+                >
                   Login
                 </Link>
               </Box>
@@ -60,7 +75,8 @@ export default function Footer() {
                 <Link
                   style={{ textDecoration: "none" }}
                   href="/register"
-                  color="inherit">
+                  color="inherit"
+                >
                   Register
                 </Link>
               </Box>
@@ -68,7 +84,8 @@ export default function Footer() {
                 <Link
                   style={{ textDecoration: "none" }}
                   href="/paid"
-                  color="inherit">
+                  color="inherit"
+                >
                   Pay
                 </Link>
               </Box>
@@ -76,24 +93,18 @@ export default function Footer() {
             <Grid item xs={12} sm={4}>
               <Box borderBottom={1}>Messages</Box>
               <Box>
-                <Link href="https://www.instagram.com/" color="inherit">
-                  Instagram
-                </Link>
+                <Link color="inherit">Instagram</Link>
               </Box>
               <Box>
-                <Link href="https://web.whatsapp.com/" color="inherit">
-                  WhatsApp
-                </Link>
+                <Link color="inherit">WhatsApp</Link>
               </Box>
               <Box>
-                <Link href="https://web.telegram.org/" color="inherit">
-                  Telegram
-                </Link>
+                <Link color="inherit">Telegram</Link>
               </Box>
             </Grid>
           </Grid>
           <Box textAlign="center" pt={{ xs: 5, sm: 10 }} pb={{ xs: 5, sm: 0 }}>
-            © AIZHAMAL AND JAMILYA ALL RIGHTS RESERVED
+            © AIZHAMAL ALL RIGHTS RESERVED
           </Box>
         </Container>
       </Box>

@@ -20,7 +20,7 @@ const EditProduct = () => {
     setProduct(productDetails);
   }, [productDetails]);
 
-  const handleInp = e => {
+  const handleInp = (e) => {
     if (e.target.name === "price") {
       let obj = {
         ...product,
@@ -96,7 +96,8 @@ const EditProduct = () => {
                 onClick={() => {
                   saveEditedProduct(product);
                   navigate("/");
-                }}>
+                }}
+              >
                 Save Changes
               </Button>
             </>
