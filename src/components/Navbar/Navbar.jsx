@@ -113,32 +113,6 @@ function ResponsiveAppBar() {
     left: false,
   });
 
-  const sideBarItems = [
-    {
-      icon: <PhoneIphoneIcon style={{ margin: "10px" }} />,
-      type: "Iphone",
-    },
-    {
-      icon: <LaptopMacOutlinedIcon style={{ margin: "10px" }} />,
-      type: "MacBook",
-    },
-    {
-      icon: <TabletMacOutlinedIcon style={{ margin: "10px" }} />,
-      type: "iPad",
-    },
-    {
-      icon: <DesktopWindowsOutlinedIcon style={{ margin: "10px" }} />,
-      type: "iMac",
-    },
-    {
-      icon: <WatchOutlinedIcon style={{ margin: "10px" }} />,
-      type: "Watch",
-    },
-    {
-      icon: <HeadphonesBatteryOutlinedIcon style={{ margin: "10px" }} />,
-      type: "AirPods",
-    },
-  ];
   //  !
   const toggleDrawer = (anchor, open) => event => {
     if (
@@ -151,30 +125,8 @@ function ResponsiveAppBar() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = anchor => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 150 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-      className="sideBar">
-      <List className="sideBarIcon">
-        {sideBarItems.map((item, index) => (
-          <ListItem
-            key={index}
-            disablePadding
-            onClick={() => {
-              fetchByParams("type", item.type);
-            }}>
-            {item?.icon} {item.type}
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
   return (
-    <AppBar style={{ background: "#660000" }} position="static">
+    <AppBar style={{ background: "white" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -187,7 +139,7 @@ function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#660000",
               textDecoration: "none",
             }}>
             ИСТОРИЯ
@@ -270,7 +222,7 @@ function ResponsiveAppBar() {
             {/* {pages.map(page => ( */}
             <Button
               onClick={() => navigate("/")}
-              sx={{ my: 2, color: "white", display: "block" }}>
+              sx={{ my: 2, color: "#660000", display: "block" }}>
               Home
             </Button>
             {user == "Jami" && (
@@ -286,13 +238,14 @@ function ResponsiveAppBar() {
                 size="small"
                 color="warning"
                 style={{
-                  color: "#fff",
+                  color: "#660000",
                 }}
               />
             </IconButton>
           </Box>
           <Box>
-            <input
+            <input 
+            style={{border:"2px solid #660000", borderRadius:"6px"}}
               className="inputSideBar"
               type="text"
               value={search}

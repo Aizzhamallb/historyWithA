@@ -16,9 +16,9 @@ footer {
   text-align: center;
 }
 #register-div {
-  background-color: rgb(33, 33, 33);
-  color: white;
-  border: black solid 2px;
+  background-color: white;
+  color: #660000;
+  border: #660000 solid 2px;
   border-radius: 15px;
   margin-top: 150px;
   margin-left: 28%;
@@ -45,7 +45,8 @@ footer {
 }
 
 #register-btn {
-  border: 2px solid white;
+  border: 2px solid;
+  background-color: #660000;
 
   border-radius: 3px;
   padding: 5px 0;
@@ -60,14 +61,14 @@ footer {
 .register-inp {
   width: 290px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #660000;
   border-radius: 3px;
   padding: 5px 0;
-  color: white;
+  color: #660000;
 }
 #log-div {
-  background-color: rgb(33, 33, 33);
-  color: white;
+  background-color: white;
+  color: #660000;
 
   border-radius: 15px;
   margin-top: 150px;
@@ -98,11 +99,11 @@ footer {
 .log-inp {
   width: 290px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #660000;
   border-radius: 3px;
   padding: 5px 0;
   margin-bottom: 22px;
-  color: white;
+  color: #660000;
 }
 #log-btn {
   border: 2px solid white;
@@ -110,6 +111,7 @@ footer {
   padding: 5px 0;
   cursor: pointer;
   transition: 200ms;
+  background-color: #660000;
 }
 #log-btn:hover {
   scale: 1.05;
@@ -250,6 +252,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 /* .outstandingcCards:hover {
   scale: 1.05;
